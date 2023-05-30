@@ -23,7 +23,7 @@ class SpeechInterceptor(
         }
     }
 
-    fun speak(text: CharSequence) {
+    private fun speak(text: CharSequence) {
 
         Timber.i("speak:  \"$text\"")
 

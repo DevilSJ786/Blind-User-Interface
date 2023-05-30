@@ -24,7 +24,9 @@ class SpeakTouchService : AccessibilityService() {
 
         Timber.d(event.getLog())
 
-        interceptors.forEach { it.handle(event) }
+        interceptors.forEach {
+            it.handle(event)
+        }
     }
 
     override fun onDestroy() {
